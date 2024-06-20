@@ -24,8 +24,7 @@ public class Main {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
         } else if (clientOS == 1 && clientDeviceYear == currentYear) {
             System.out.println("Установите версию приложения для Android по ссылке");
-        } else if (clientDeviceYear > currentYear){
-            throw new RuntimeException ("Путешествия в этот временной отрезок запрещены обьеденённой космической федерацией, не пытайтесь вмешаться в ход текущих событий во избежание временно-пространственного парадокса!");
+
         }
     }
 
@@ -50,7 +49,7 @@ public class Main {
     public static void main(String[] args) {
         checkYear(2003);
 
-        printDeviceVersion(1, 2022);
+        printDeviceVersion(1, 2023);
 
         System.out.println("Потребуется дней: " + dayToDelivery(70) + " дня.");
     }
