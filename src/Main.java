@@ -30,7 +30,7 @@ public class Main {
 
     public static int dayToDelivery(int deliveryDistance) {
         int days = 0;
-        if (deliveryDistance > 100) {
+        if (deliveryDistance > 1000) {
 
         } else {
             if (deliveryDistance >= 0) {
@@ -42,6 +42,9 @@ public class Main {
             if (deliveryDistance > 60) {
                 days++;
             }
+            if (deliveryDistance > 100) {
+                days++;
+            }
         }
         return days;
     }
@@ -51,6 +54,6 @@ public class Main {
 
         printDeviceVersion(1, 2023);
 
-        System.out.println("Потребуется дней: " + dayToDelivery(100) + " дня.");
+        System.out.println("Потребуется дней: " + dayToDelivery(200) + " дня.");
     }
 }
